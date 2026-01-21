@@ -1,0 +1,14 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: timer-config
+  namespace: countdown
+data:
+  APP_VERSION: "v1"
+  USE_REDIS: "true"
+  REDIS_HOST: "redis"
+  REDIS_PORT: "6379"
+  REDIS_DB: "0"
+  TIMER_KEY: "timer:end"
+  PORT: "8080"
